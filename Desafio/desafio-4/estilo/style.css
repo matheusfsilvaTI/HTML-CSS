@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Playfair Display", serif;
+    --fonte3: "Rye", serif;
+}
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,6 +19,7 @@
 html, body {
     background-color: darkgray;
     min-height: 100vh;
+    font-family: var(--fonte1);
 }
 
 header{
@@ -19,11 +31,13 @@ header{
 header > h1 {
     padding-top: 50px;
     text-transform: uppercase;
+    font-family: var(--fonte3);
 
 }
 
 header > p {
     padding-bottom: 50px;
+    font-family: var(--fonte3);
 
 }
 
@@ -42,11 +56,14 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte2);
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 section.normal{
     background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    color: rgb(206, 96, 96);
 }
 
 section.imagem{
